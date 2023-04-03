@@ -273,9 +273,9 @@ header {
   margin: 5px;
 }
 
-.card-icons img:hover {
-  filter: invert(40%) sepia(75%) saturate(363%) hue-rotate(157deg)
-    brightness(100%) contrast(91%);
+.projects .card-icons img:hover {
+  filter: invert(50%) sepia(49%) saturate(530%) hue-rotate(156deg)
+    brightness(85%) contrast(92%);
   width: 25px;
 }
 
