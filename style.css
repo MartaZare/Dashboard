@@ -1,0 +1,336 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Maven Pro", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: grid;
+
+  grid-template-columns: 0.8fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 5fr;
+  background-color: #e3e8f0;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: "Maven Pro", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  grid-area: 1 /2 /2 /6;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1fr 4fr;
+  background-color: white;
+  box-shadow: 5px 5px 5px #b1b4b9;
+  height: 179px;
+  padding: 10px;
+}
+
+.top-header,
+.bottom-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin: 15px 0px 5px 50px;
+  padding: 0;
+}
+
+.search img {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+.search input {
+  width: 600px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  background-color: #e3e8f0;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-right: 50px;
+}
+
+.user img {
+  width: 50px;
+  height: 50px;
+  background-color: #e3e8f0;
+  padding: 10px;
+  margin-right: 16px;
+  border-radius: 50px;
+}
+
+.user p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.bottom-header {
+  align-items: center;
+  margin-left: 50px;
+}
+
+.bottom-header img {
+  width: 80px;
+  height: 80px;
+  background-color: #e3e8f0;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.greeting {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+
+.greeting-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.greeting-message h2 {
+  font-weight: 700;
+  font-size: 30px;
+  color: #f1c043;
+}
+
+.header-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px;
+  align-items: center;
+  justify-content: right;
+  margin-right: 50px;
+}
+
+.header-buttons a {
+  background-color: #3c86ad;
+  border-radius: 25px;
+  margin-left: 20px;
+  padding: 12px 0px;
+  font-size: 16px;
+  font-weight: 600;
+  height: 45px;
+  width: 110px;
+  font-family: "Maven Pro", sans-serif;
+  text-align: center;
+}
+
+.header-buttons a:hover {
+  background-color: #f1c043;
+  color: #3c86ad;
+}
+
+.side-bar {
+  grid-area: 1 /1 /3 /2;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 600;
+  background-color: #3c86ad;
+  color: white;
+  display: grid;
+  grid-template-rows: 1fr 5fr 6fr;
+  gap: 30px;
+  padding: 0px 15px;
+}
+
+.page-logo {
+  display: flex;
+  align-items: center;
+}
+
+.page-logo img {
+  width: 50px;
+  padding-right: 6px;
+}
+
+.page-logo h1 {
+  color: #ffd15c;
+  font-weight: 600;
+}
+
+.page-logo .highlight {
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.page-navigation img,
+.settings-navigation img,
+.project-cards .card .card-icons img {
+  filter: invert(79%) sepia(27%) saturate(856%) hue-rotate(353deg)
+    brightness(103%) contrast(101%);
+  width: 25px;
+}
+
+.page-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-card,
+.set-card {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  font-size: 20px;
+}
+.nav-card a:hover,
+.set-card a:hover {
+  color: #ffd15c;
+}
+
+.nav-card img,
+.set-card img {
+  margin-right: 12px;
+}
+
+.content {
+  grid-area: 2 / 2 / 3 /6;
+  background-color: #e3e8f0;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.projects,
+.announcements,
+.trending {
+  padding: 20px;
+}
+
+.projects h2,
+.announcements h2,
+.trending h2 {
+  margin-bottom: 5px;
+}
+
+.projects {
+  grid-area: 1 / 1 / 3 / 2;
+  padding-right: 0px;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.project-cards .card {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 30px 20px 20px 15px;
+  background-color: white;
+  border-radius: 20px;
+  width: 350px;
+  box-shadow: 5px 5px 5px #b1b4b9;
+}
+
+.project-cards .card h3 {
+  padding-bottom: 5px;
+}
+
+.project-cards .card p {
+  font-family: "Archivo", sans-serif;
+  line-height: 22px;
+  color: grey;
+  margin-bottom: 10px;
+}
+
+.card-icons {
+  align-self: flex-end;
+}
+
+.card-icons img {
+  margin: 5px;
+}
+
+.card-icons img:hover {
+  filter: invert(40%) sepia(75%) saturate(363%) hue-rotate(157deg)
+    brightness(100%) contrast(91%);
+  width: 25px;
+}
+
+.announcements {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.announcement-cards,
+.trending-cards {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 16px;
+  padding: 0px 15px 20px 15px;
+  box-shadow: 5px 5px 5px #b1b4b9;
+}
+
+.announcement-cards .card,
+.trending-cards .card {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.announcement-cards .card h3,
+.trending-cards .card h3 {
+  padding-bottom: 5px;
+}
+
+.announcement-cards .card p {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  color: grey;
+}
+
+.trending {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.trending-cards .card {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+
+.trending-cards .card p {
+  font-family: "Archivo", sans-serif;
+  line-height: 25px;
+  color: grey;
+}
+
+.trending-cards .card img {
+  width: 60px;
+  height: 60px;
+  background-color: #e3e8f0;
+  padding: 10px;
+  border-radius: 50px;
+  justify-self: center;
+}
